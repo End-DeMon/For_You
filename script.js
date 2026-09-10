@@ -134,10 +134,10 @@ yesButton.addEventListener("click", function () {
     resultScreen.style.display = "block";
 
     resultTitle.textContent =
-        "ขอบคุณที่เลือกผมนะ 💗";
+        "ขอบคุณที่เลือกพี่นะคับ 💗";
 
     resultMessage.textContent =
-        "จากวันนี้ไป ขอให้ผมได้ดูแลคุณนะ :)";
+        "จากวันนี้ไป ไม่ว่าจะเกิดเรื่องอะไรขึ้นท้ังดีและไม่ดี พี่จะคอยอยู่ข้างๆหนูเสมอนะคับรักหนูนะคับ :)";
 
 
     // สร้างหัวใจลอย 💗
@@ -188,9 +188,9 @@ thinkButton.addEventListener("click", function () {
     resultScreen.style.display = "block";
 
     resultTitle.textContent =
-        "ไม่เป็นไรนะ 🥺";
+        "ไม่เป็นไรนะคับ 🥺";
 
     resultMessage.textContent =
-        "ผมรอคำตอบของคุณได้เสมอ 💗";
+        "พี่รอคำตอบของหนูได้เสมอนะคับ 💗";
 
 });
