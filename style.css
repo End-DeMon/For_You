@@ -1,0 +1,667 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #fff1f5,
+        #ffe4ec,
+        #fff8f5
+    );
+
+    color: #5a3d45;
+
+    font-family: Arial, sans-serif;
+
+    text-align: center;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================
+   หน้าแรก
+   ========================= */
+
+.welcome {
+
+    display: block;
+
+    width: 90%;
+
+    max-width: 500px;
+
+    padding: 40px 25px;
+
+}
+
+
+.heart {
+
+    font-size: 70px;
+
+    color: #e88ca5;
+
+    margin-bottom: 20px;
+
+    animation: floating 3s ease-in-out infinite;
+
+}
+
+
+.small-text {
+
+    font-size: 16px;
+
+    color: #a67884;
+
+    margin-bottom: 10px;
+
+}
+
+
+h1 {
+
+    font-size: 48px;
+
+    font-weight: 600;
+
+    color: #8f5363;
+
+    margin-bottom: 20px;
+
+}
+
+
+.message {
+
+    font-size: 19px;
+
+    line-height: 1.8;
+
+    color: #76545e;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* =========================
+   ปุ่ม
+   ========================= */
+
+button {
+
+    border: none;
+
+    padding: 16px 30px;
+
+    border-radius: 50px;
+
+    background: #e99aae;
+
+    color: white;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px rgba(180, 100, 120, 0.25);
+
+    transition: 0.3s;
+
+}
+
+
+button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 25px rgba(180, 100, 120, 0.35);
+
+}
+
+
+/* =========================
+   หน้าจดหมาย
+   ========================= */
+
+.letter {
+
+    display: none;
+
+    width: 90%;
+
+    max-width: 500px;
+
+    padding: 40px 25px;
+
+}
+
+
+.letter-content {
+
+    background: rgba(255, 255, 255, 0.65);
+
+    padding: 40px 30px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 40px rgba(180, 100, 120, 0.15);
+
+}
+
+
+.letter h2 {
+
+    font-size: 32px;
+
+    color: #8f5363;
+
+    margin-bottom: 25px;
+
+}
+
+
+.letter p {
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    color: #76545e;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =========================
+   หน้าขอเป็นแฟน
+   ========================= */
+
+.question {
+
+    display: none;
+
+    width: 90%;
+
+    max-width: 500px;
+
+    padding: 40px 25px;
+
+}
+
+
+.question-content {
+
+    background: rgba(255, 255, 255, 0.65);
+
+    padding: 40px 30px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 40px rgba(180, 100, 120, 0.15);
+
+}
+
+
+.question h2 {
+
+    font-size: 26px;
+
+    line-height: 1.7;
+
+    color: #8f5363;
+
+    margin-bottom: 20px;
+
+}
+
+
+.love-question {
+
+    font-size: 30px;
+
+    font-weight: 600;
+
+    color: #8f5363;
+
+    margin: 30px 0;
+
+}
+
+
+.answer-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.answer-buttons button {
+
+    min-width: 140px;
+
+}
+
+
+#thinkButton {
+
+    background: #d9a6b3;
+
+}
+
+
+/* =========================
+   หน้าผลลัพธ์
+   ========================= */
+
+.result {
+
+    display: none;
+
+    width: 90%;
+
+    max-width: 500px;
+
+}
+
+
+.result-content {
+
+    background: rgba(255, 255, 255, 0.65);
+
+    padding: 45px 30px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 40px rgba(180, 100, 120, 0.15);
+
+}
+
+
+.big-heart {
+
+    font-size: 70px;
+
+    margin-bottom: 20px;
+
+    animation: floating 2s ease-in-out infinite;
+
+}
+
+
+.result h2 {
+
+    font-size: 32px;
+
+    color: #8f5363;
+
+    margin-bottom: 20px;
+
+}
+
+
+.result p {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #76545e;
+
+}
+
+
+/* =========================
+   Animation
+   ========================= */
+
+@keyframes floating {
+
+    0%, 100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-10px);
+
+    }
+
+}
+
+
+/* =========================
+   มือถือ
+   ========================= */
+
+@media (max-width: 600px) {
+
+    h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .love-question {
+
+        font-size: 26px;
+
+    }
+
+
+    .question h2 {
+
+        font-size: 22px;
+
+    }
+
+
+    .answer-buttons {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+
+    .answer-buttons button {
+
+        width: 80%;
+
+    }
+
+}
+/* =========================
+   หัวใจตอนตอบตกลง
+   ========================= */
+
+.floating-heart {
+    position: fixed;
+
+    bottom: -50px;
+
+    font-size: 30px;
+
+    pointer-events: none;
+
+    animation: heartUp 4s ease-out forwards;
+
+    z-index: 999;
+}
+
+
+@keyframes heartUp {
+
+    0% {
+        transform: translateY(0) scale(0.8);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-110vh) scale(1.4);
+        opacity: 0;
+    }
+
+}/* =========================
+   หัวใจลอย
+   ========================= */
+
+.floating-heart {
+
+    position: fixed;
+
+    bottom: -50px;
+
+    font-size: 30px;
+
+    pointer-events: none;
+
+    animation: heartUp 4s ease-out forwards;
+
+    z-index: 999;
+
+}
+
+
+@keyframes heartUp {
+
+    0% {
+
+        transform: translateY(0) scale(0.8);
+
+        opacity: 0;
+
+    }
+
+    15% {
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        transform: translateY(-110vh) scale(1.4);
+
+        opacity: 0;
+
+    }
+
+}
+/* =========================
+   เอฟเฟกต์ Fade
+   ========================= */
+
+.welcome,
+.letter,
+.question,
+.result {
+
+    animation: fadeIn 0.8s ease;
+
+}
+
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(15px);
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}
+/* =========================
+   ตกแต่งจดหมายให้ดูอบอุ่น
+   ========================= */
+
+.letter-content {
+
+    position: relative;
+
+    border: 1px solid rgba(220, 160, 175, 0.25);
+
+    backdrop-filter: blur(8px);
+
+}
+
+
+.letter-content::before {
+
+    content: "♡";
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 20px;
+
+    font-size: 25px;
+
+    color: #e8a1b3;
+
+    opacity: 0.7;
+
+}
+
+.letter-content::after {
+
+    content: "♡";
+
+    position: absolute;
+
+    bottom: 15px;
+
+    left: 20px;
+
+    font-size: 20px;
+
+    color: #e8a1b3;
+
+    opacity: 0.5;
+
+}
+/* =========================
+   ปุ่มหัวใจ 💗
+   ========================= */
+
+button {
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
+}
+
+
+button:active {
+
+    transform: scale(0.95);
+
+}
+
+
+#yesButton {
+
+    background: linear-gradient(
+        135deg,
+        #e99aae,
+        #e87f9a
+    );
+
+}
+
+
+#yesButton:hover {
+
+    transform: translateY(-4px) scale(1.03);
+
+    box-shadow:
+        0 12px 30px rgba(220, 100, 130, 0.35);
+
+}
+
+
+#thinkButton:hover {
+
+    transform: translateY(-3px);
+
+}
+/* =========================
+   หัวใจจาง ๆ บนพื้นหลัง
+   ========================= */
+
+body::before {
+
+    content: "♡  ♡  ♡  ♡  ♡";
+
+    position: fixed;
+
+    top: 8%;
+
+    left: 0;
+
+    width: 100%;
+
+    font-size: 25px;
+
+    letter-spacing: 50px;
+
+    color: rgba(220, 130, 155, 0.12);
+
+    pointer-events: none;
+
+    z-index: -1;
+
+}
+
+
+body::after {
+
+    content: "♡  ♡  ♡  ♡";
+
+    position: fixed;
+
+    bottom: 10%;
+
+    right: 0;
+
+    width: 100%;
+
+    text-align: right;
+
+    font-size: 30px;
+
+    letter-spacing: 45px;
+
+    color: rgba(220, 130, 155, 0.10);
+
+    pointer-events: none;
+
+    z-index: -1;
+
+}
